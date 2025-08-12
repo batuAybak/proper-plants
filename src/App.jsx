@@ -4,7 +4,7 @@ import Plants from "../components/plants";
 import PLANTS from "./data";
 
 export default function App() {
-  let plantsArr = PLANTS.map((plant) => ({ ...plant, cartCount: 0 })); //add new key and value to tract count
+  let plantsArr = PLANTS.map((plant) => ({ ...plant, cartCount: 0 })); //add new key and value to track count
   const [cart, setCart] = useState(plantsArr);
 
   //Function to increase the count of a plant in given plant id
